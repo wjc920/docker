@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b17e8eec-6524-4e01-b5bf-4d883e3a65a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker-kerberos/krb-client/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-kerberos/krb-client/init-script.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-kerberos/krb-server/CentOS7-Base-163.repo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-kerberos/krb-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-kerberos/krb-server/init-script.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/kerberos.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-zookeeper/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-kerberos/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker-kerberos/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-kerberos/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-kerberos/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-kerberos/kdc-kadmin/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-kerberos/kdc-kadmin/init-script.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-kerberos/kerberos-client/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-kerberos/kerberos-client/configureKerberosClient.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-kerberos/kerberos-client/init-script.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-kerberos/kerberos.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-kerberos/kerberos.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-zookeeper-kerberos/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-zookeeper-kerberos/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-zookeeper-kerberos/jaas.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/jaas.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-zookeeper-kerberos/java.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/java.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-zookeeper-kerberos/krb5.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/krb5.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-zookeeper-kerberos/zk-entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/zk-entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-zookeeper-kerberos/zookeeper_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker-zookeeper-kerberos/zookeeper_setup.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/docker-zookeeper-kerberos" />
+  </component>
+  <component name="ProjectId" id="1bhlu4FLL5ioSX9mfjiz19W2UIm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-zookeeper-kerberos" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker-kerberos/krb-client" />
+      <recent name="$PROJECT_DIR$/docker-kerberos" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker-zookeeper-kerberos" />
+      <recent name="$PROJECT_DIR$/docker-zookeeper" />
+      <recent name="$PROJECT_DIR$/docker-kerberos/krb-server" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b17e8eec-6524-4e01-b5bf-4d883e3a65a8" name="Default Changelist" comment="" />
+      <created>1589092425451</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589092425451</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="269" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589115677526">
+      <screen x="0" y="0" width="1920" height="1013" />
+    </state>
+    <state x="392" y="269" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1013@0.0.1920.1013" timestamp="1589115677526" />
+    <state x="100" y="100" width="1720" height="813" key="DiffContextDialog" timestamp="1589106911812">
+      <screen x="0" y="0" width="1920" height="1013" />
+    </state>
+    <state x="100" y="100" width="1720" height="813" key="DiffContextDialog/0.0.1920.1013@0.0.1920.1013" timestamp="1589106911812" />
+    <state x="647" y="143" key="FileChooserDialogImpl" timestamp="1589093882107">
+      <screen x="0" y="0" width="1920" height="1013" />
+    </state>
+    <state x="647" y="143" key="FileChooserDialogImpl/0.0.1920.1013@0.0.1920.1013" timestamp="1589093882107" />
+    <state x="100" y="100" width="1720" height="813" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589097025736">
+      <screen x="0" y="0" width="1920" height="1013" />
+    </state>
+    <state x="100" y="100" width="1720" height="813" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1013@0.0.1920.1013" timestamp="1589097025736" />
+    <state x="406" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589124976238">
+      <screen x="0" y="0" width="1920" height="1013" />
+    </state>
+    <state x="406" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1013@0.0.1920.1013" timestamp="1589124976238" />
+    <state x="333" y="42" width="1254" height="928" key="find.popup" timestamp="1589113068457">
+      <screen x="0" y="0" width="1920" height="1013" />
+    </state>
+    <state x="333" y="42" width="1254" height="928" key="find.popup/0.0.1920.1013@0.0.1920.1013" timestamp="1589113068457" />
+    <state x="455" y="217" key="run.anything.popup" timestamp="1589114202934">
+      <screen x="0" y="0" width="1920" height="1013" />
+    </state>
+    <state x="455" y="217" key="run.anything.popup/0.0.1920.1013@0.0.1920.1013" timestamp="1589114202934" />
+  </component>
+</project>

@@ -1,0 +1,34 @@
+version: "2"
+services:
+  krb-server:
+    image: krb-server
+    restart: always
+    hostname: kdc.wjc920.krb
+    container_name: krb-server
+    env_file: kerberos.env
+    ports:
+      - "749:749"
+      - "88:88"
+    volumes:
+      - /tmp/docker_kdc:/cloud/data/kdc
+    networks:
+      default:
+        ipv4_address: 192.168.11.1
+
+
+  krb-client:
+    image: krb-client
+    env_file: kerberos.env
+    container_name: krb-client
+    environment:
+      KRB_SERVER: 192.168.11.1 kdc.wjc920.krb
+    depends_on:
+      - krb-server
+    networks:
+      default:
+        ipv4_address: 192.168.11.2
+
+networks:
+  default:
+    external:
+      name: wjc-test

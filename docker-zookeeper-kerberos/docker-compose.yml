@@ -1,0 +1,81 @@
+# 创建网络： docker network create --driver bridge --subnet 172.69.0.0/25 --gateway 172.69.0.1  kafka_zoo
+version: '2'
+services:
+  krb-server:
+    image: krb-server
+    restart: always
+    hostname: kdc.wjc920.krb
+    container_name: krb-server
+    env_file: kerberos.env
+#    ports:
+#      - "749:749"
+#      - "88:88"
+    volumes:
+      - /tmp/docker_kdc:/cloud/data/kdc
+    networks:
+      default:
+        ipv4_address: 192.168.11.1
+  zoo1:
+    image: zk
+    restart: always
+    hostname: zoo1
+    container_name: zoo1
+#    ports:
+#      - "2181:2181"
+    volumes:
+      - "/tmp/docker_zk/data:/cloud/data/zookeeper" # “:”前改成自己的目录
+      - "/tmp/docker_zk/log:/cloud/log/zookeeper" # “:”前改成自己的目录
+    environment:
+      ZOO_MY_ID: 1
+      KRB_SERVER: 192.168.11.1 kdc.wjc920.krb
+      CLUSTER_INFO: 192.168.12.1 zoo1\n192.168.12.2 zoo2\n192.168.12.3 zoo3
+      ZOO_SERVERS: server.1=zoo1:2888:3888\nserver.2=zoo2:2888:3888\nserver.3=zoo3:2888:3888
+    networks:
+      default:
+        ipv4_address: 192.168.12.1
+    depends_on:
+      - krb-server
+  zoo2:
+    image: zk
+    restart: always
+    hostname: zoo2
+    container_name: zoo2
+#    ports:
+#      - "2181:2181"
+    volumes:
+      - "/tmp/docker_zk/data:/cloud/data/zookeeper" # “:”前改成自己的目录
+      - "/tmp/docker_zk/log:/cloud/log/zookeeper" # “:”前改成自己的目录
+    environment:
+      ZOO_MY_ID: 2
+      KRB_SERVER: 192.168.11.1 kdc.wjc920.krb
+      CLUSTER_INFO: 192.168.12.1 zoo1\n192.168.12.2 zoo2\n192.168.12.3 zoo3
+      ZOO_SERVERS: server.1=zoo1:2888:3888\nserver.2=zoo2:2888:3888\nserver.3=zoo3:2888:3888
+    networks:
+      default:
+        ipv4_address: 192.168.12.2
+    depends_on:
+      - krb-server
+  zoo3:
+    image: zk
+    restart: always
+    hostname: zoo3
+    container_name: zoo3
+#    ports:
+#      - "2181:2181"
+    volumes:
+      - "/tmp/docker_zk/data:/cloud/data/zookeeper" # “:”前改成自己的目录
+      - "/tmp/docker_zk/log:/cloud/log/zookeeper" # “:”前改成自己的目录
+    environment:
+      ZOO_MY_ID: 3
+      KRB_SERVER: 192.168.11.1 kdc.wjc920.krb
+      CLUSTER_INFO: 192.168.12.1 zoo1\n192.168.12.2 zoo2\n192.168.12.3 zoo3
+      ZOO_SERVERS: server.1=zoo1:2888:3888\nserver.2=zoo2:2888:3888\nserver.3=zoo3:2888:3888
+    networks:
+      default:
+        ipv4_address: 192.168.12.3
+    depends_on:
+      - krb-server
+networks:
+  default:
+    external:
+      name: wjc-test
